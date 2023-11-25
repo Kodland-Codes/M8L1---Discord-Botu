@@ -1,4 +1,4 @@
-# m8l1-portfolio-websitesi
+# m8l1-Discord Botu
 
 
 ## Projenizi kaydetmek istediğiniz klasöre gitmek:
@@ -20,7 +20,7 @@ cd Bitirme_Projesi
 
 Projeyi kaydet istediğiniz klasörün içindeyseniz, aşağıdaki komutu girerek bu github deposunu bilgisayarınıza indirebilirsiniz:
 ```
-git clone https://github.com/Kodland-Codes/m8l1-portfolio-websitesi.git
+git clone https://github.com/Kodland-Codes/m8l1---Discord-Botu.git
 ```
 
 ## Sanal ortamı aktifleştirmek ve kütüphaneleri indirmek
