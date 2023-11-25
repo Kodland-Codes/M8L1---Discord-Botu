@@ -40,3 +40,15 @@ git commit -m "Yaptığınız değişiklikle ilgili bir yorum, örneğin: !merha
 git push origin main
 ```
 
+## Kullandığınız ortamdaki kütüphanedeki dondurmak için:
+Doğru ortamı kullandığınızdan emin olun ve terminalde bunu yazınız:
+```
+pip freeze > requirements.txt
+```
+
+### Sanal ortamdaki kütüphaneleri indirmek için
+1-Doğru ortamı kullandığınzdan emin olun
+2-Bu komutları terminale yazınız
+```
+pip install -r requirements.txt
+```
