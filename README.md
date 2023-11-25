@@ -1,54 +1,52 @@
-# m8l1
-
-## Sanal Ortam
-Sanal ortam oluşturmak için bunları VSCode'daki terminalinize yazınız:
-
-```
-python -m venv <ortamın_ismi>
-source <ortamın_ismi>/bin/activate
-```
-Terminalde solda parantez içinde ortamınızın ismini görüyor olmanız lazım.
-Ortamınızın ismini venv olarak koyduğunuzu varsayalım, o zaman terminaldeki yazının böyle olması gerekiyor: 
-
-```
-(venv) cando@galaxy-a32-5g m8l1 %
-```
-
-## GitHub'ta yeni depo oluşturmak ve local'deki klasörlerinizi Github'taki depoya yüklemek için:
-
-1. Yeni depo oluşturun, README olmadan.
-2. SSH Linkini kopyalayınız
-3. Bu komutları giriniz:
-```
-echo "# My Repository" >> README.md
-  git init
-  git add README.md
-  git commit -m "first commit"
-  git branch -M main
-  git remote add origin git@github.com:cando-jo/test.git
-  git push -u origin main
-```
+# m8l1-portfolio-websitesi
 
 
+## Projenizi kaydetmek istediğiniz klasöre gitmek:
+1-Terminalde projenizi kaydetmek istediğiniz yere gidiniz
+İşinize yarayan komutlar
+`cd <klasör_ismi>` sizi klasörün içine alacak
+`ls` Bulunduğunuz klasörün içindeki dosyları gösterecek 
+`pwd` Bulunduğunuz klasörün adresi
+`mkdir <klasör_ismi>` Yeni bir klasör oluşturmak
 
-## Local'de yaptığınız değişiklikleri GitHub'a yüklemek
-Projenizi güncelledikten sonra her zaman yaptığınız değişiklikleri Github'a yüklemeniz gerekiyor, aşağıdaki komutları yazarak Github'a deponuzu yükleyebilirisiniz.:
-
+Önreğin, ben masaüstünde kaydetmek için bu komutları kullandım:
 ```
-git add .
-git commit -m "Yaptığınız değişiklikle ilgili bir yorum, örneğin: !merhaba komutu eklendi"
-git push origin main
+cd Desktop
+mkdir Bitirme_Projesi
+cd Bitirme_Projesi
 ```
 
-## Kullandığınız ortamdaki kütüphanedeki dondurmak için:
-Doğru ortamı kullandığınızdan emin olun ve terminalde bunu yazınız:
+## Github deposunu localinize indirmek
+
+Projeyi kaydet istediğiniz klasörün içindeyseniz, aşağıdaki komutu girerek bu github deposunu bilgisayarınıza indirebilirsiniz:
 ```
-pip freeze > requirements.txt
+git clone https://github.com/Kodland-Codes/m8l1-portfolio-websitesi.git
 ```
 
-### Sanal ortamdaki kütüphaneleri indirmek için
-1-Doğru ortamı kullandığınzdan emin olun
-2-Bu komutları terminale yazınız
+## Sanal ortamı aktifleştirmek ve kütüphaneleri indirmek
+
+Projenizi VSCode'da açınız ve aşağıdaki komutu giriniz
+NOT: `bilgisayarı kapatıp açtığınz zaman da bu komutu her zaman girmeniz gerekiyor`
+
 ```
+source venv/bin/activate
 pip install -r requirements.txt
+
 ```
+
+## Projeyi çalıştırmak
+### Yöntem 1: VSCode terminalinden
+NOT: VScode terminalinde projenin klasöründe olduğunuzdan ve doğru sanal ortamı kullandığınızdan emin olunuz.
+Bu konmutu VSCode terminalinde yazarak projeyi çalıştırabilirsiniz:
+```
+python main.py
+```
+
+### Yöntem 2: VScode çalıştır butonundan
+Eğer bu yöntemi kullanmak istiyorsanız VSCode'da kullandığınız İnterpreter'ın VENV (Sanal ortamımızın ismi) olması gerekiyor
+1- `CTRL + SHIFT + P`'ye tıklayınız
+2- Python Select Interpreter'e tıklayınız
+3- VENV adındaki sanal ortamı seçiniz
+
+
+
